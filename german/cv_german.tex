@@ -1,0 +1,481 @@
+% XeLaTeX
+% Based on https://www.overleaf.com/latex/templates/professional-cv/wvqwpvrmrvkh
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{color,graphicx}
+\usepackage[autostyle,german=guillemets]{csquotes}
+\usepackage{fontspec}
+\usepackage{hyperref}
+   \definecolor{lcolor}{rgb}{0,0,0}
+   \hypersetup{colorlinks,breaklinks,urlcolor=lcolor,linkcolor=lcolor}
+\usepackage[big]{layaureo}
+\usepackage{longtable}
+\usepackage{marvosym}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode,xltxtra,url,parskip}
+
+\newenvironment{literature}{%
+   \parskip6pt\parindent0pt\raggedright
+   \def\lititem{\hangindent=1cm\hangafter1}}{%
+   \par\ignorespaces}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont=fontin_small_caps.otf,BoldFont=fontin_bold.otf,ItalicFont=fontin_italic.otf]{fontin.otf}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{15pt}{15pt}
+
+\hyphenation{im-pre-se}
+
+\begin{document}
+
+\pagestyle{empty}
+\font\fb=''[cmr10]''
+
+\par{\centering
+   {\Huge\textsc{Alexander Max Bauer}
+   }\bigskip\par}
+
+\par{\centering
+   {\Large\textsc{Curriculum Vitae}
+   }\bigskip\par}
+
+\par{\centering
+   {\Large\textsc{Juni 2022}
+   }\bigskip\par}
+
+
+%%%%%%%%%%%
+% KONTAKT %
+%%%%%%%%%%%
+\section{Kontakt}
+\begin{tabular}{rl}
+   \textsc{Anschrift}   & Universität Oldenburg\\
+                        & Institut für Philosophie\\
+                        & Ammerländer Heerstraße 114--119\\
+                        & 26129 Oldenburg\\
+   \textsc{Telefon}     & 0441 7982034\\
+   \textsc{E-Mail}      & \href{mailto:alexander.max.bauer@uni-oldenburg.de}{alexander.max.bauer@uni-oldenburg.de}\\
+   \textsc{Website}     & \href{https://www.alexandermaxbauer.com/}{www.alexandermaxbauer.de}
+\end{tabular}
+
+
+%%%%%%%%%%%%%%
+% ANSTELLUNG %
+%%%%%%%%%%%%%%
+\section{Anstellung}
+\begin{longtable}{p{1,75cm}p{11,5cm}}
+\multirow{3}{1,75cm}{\footnotesize{06/2018 --\\06/2022}} & Wissenschaftlicher Mitarbeiter\\
+& \textsc{Carl von Ossietzky Universität Oldenburg}\\
+& \footnotesize{am Institut für Philosophie bei Mark Siebel; 50 Prozent von 06/2018 bis 08/2019, 75 Prozent von 09/2019 bis 06/2021 und 65 Prozent von 07/2021 bis 06/2022; Mitarbeit in dem Teilprojekt \enquote{Maße der Bedarfsgerechtigkeit, Expertise und Kohärenz} der Forschergruppe \enquote{Bedarfsgerechtigkeit und Verteilungsprozeduren} (FOR 2104) der Deutschen Forschungsgemeinschaft (DFG)}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{08/2017 --\\12/2017}} & Wissenschaftlicher Mitarbeiter\\
+& \textsc{Helmut-Schmidt-Universität, Universität der Bundeswehr Hamburg}\\
+& \footnotesize{am Institut für Volkswirtschaftslehre bei Stefan Traub; 50 Prozent; Mitarbeit in dem Anschlussprojekt \enquote{Synergien verhaltenswissenschaftlicher und spielanalytischer Forschungen} der Fördermaßnahme \enquote{Umwelt- und gesellschaftsverträgliche Transformation des Energiesystems} des Bundesministeriums für Bildung und Forschung (BMBF)}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{04/2017 --\\03/2018,\\10/2018 --\\03/2020}} & Lehrbeauftragter\\
+& \textsc{Carl von Ossietzky Universität Oldenburg}\\
+& \footnotesize{am Institut für Philosophie; Konzeptionierung und Leitung von Seminaren für Basismodule, Aufbaumodule und Mastermodule der Philosophie sowie für den Professionalisierungsbereich}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{02/2015 --\\06/2018}} & Wissenschaftliche Hilfskraft\\
+& \textsc{Karl-Jaspers-Gesellschaft e.\,V.}\\
+& \footnotesize{bei Matthias Bormuth; von 04/2017 bis 06/2018 auf selbstständiger Basis; Redaktion und Lektorat verschiedener Buchprojekte; Organisation von Finanzen und Rechnungswesen sowie der Mitgliederverwaltung; Vorbereitung und Betreuung von Veranstaltungen}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{10/2013 --\\06/2018}} & Studentische und Wissenschaftliche Hilfskraft\\
+& \textsc{Carl von Ossietzky Universität Oldenburg}\\
+& \footnotesize{am Institut für Philosophie bei Mark Siebel, Martin Vialon und Michael Städtler sowie am Hannah-Arendt-Zentrum bei Johann Kreuzer; Konzeptionierung und Leitung von Tutorien in der Theoretischen und der Praktischen Philosophie sowie Organisation und Durchführung von dazugehörigen Prüfungen; Konzeptionierung, Organisation und Leitung von Übungen zur Einführung in das wissenschaftliche Arbeiten; Organisation und Durchführung eines Workshops sowie einer Fachtagung; Mitarbeit in dem Teilprojekt \enquote{Maße der Bedarfsgerechtigkeit, Expertise und Kohärenz} der Forschergruppe \enquote{Bedarfsgerechtigkeit und Verteilungsprozeduren} (FOR 2104) der Deutschen Forschungsgemeinschaft (DFG)}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{04/2012 --\\06/2013}} & Studentische Hilfskraft\\
+& \textsc{Institut für Ökonomische Bildung gGmbH}\\
+& \footnotesize{im Bereich \enquote{Schulpraxis und Unterrichtsforschung} bei Rudolf Schröder; Kontaktpflege zu Teilnehmern empirischer Studien; Bearbeitung von Fragebogendaten; Erstellung statistischer Grafiken; Unterstützung einer Fachtagung}\\
+\end{longtable}
+
+
+%%%%%%%%%%%%%%
+% AUSBILDUNG %
+%%%%%%%%%%%%%%
+\section{Ausbildung}
+\begin{longtable}{p{1,75cm}p{11,5cm}}
+\multirow{3}{1,75cm}{\footnotesize{seit\\04/2017}} & Doctor philosophiae (Philosophie)\\
+& \textsc{Carl von Ossietzky Universität Oldenburg}\\
+& \footnotesize{Titel der kumulativen Dissertation: \enquote{Empirische Studien zu Fragen der Bedarfsgerechtigkeit} (Referent: Mark Siebel)}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{04/2014 --\\03/2017}} & Master of Arts (Philosophie)\\
+& \textsc{Carl von Ossietzky Universität Oldenburg}\\
+& \footnotesize{mit Auszeichnung bestanden (1,08); Titel der Masterarbeit: \enquote{Monotonie und Monotoniesensitivität als Desiderata für Maße der Bedarfsgerechtigkeit -- Zu zwei Aspekten der Grundlegung empirisch informierter Maße der Bedarfsgerechtigkeit zwischen normativer Theorie, formaler Modellierung und empirischer Sozialforschung} (Erstprüfer: Mark Siebel, Zweitprüfer: Arne Robert Weiß)}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{10/2010 --\\03/2014}} & Bachelor of Arts (Politik-Wirtschaft und Philosophie)\\
+& \textsc{Carl von Ossietzky Universität Oldenburg}\\
+& \footnotesize{mit sehr gut bestanden (1,47); Titel der Bachelorarbeit: \enquote{Friedrich Wilhelm Nietzsches Problematisierung von Sprache und Wahrheit in seiner Schrift \enquote{Ueber Wahrheit und Lüge im aussermoralischen Sinne}} (Erstprüfer: Johann Kreuzer, Zweitprüfer: Ingo Elbe)}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{08/2007 --\\06/2010}} & Abitur\\
+& \textsc{Domgymnasium Verden}\\
+& \footnotesize{mit gut bestanden (2,40); Prüfungsfächer mit erhöhtem Anforderungsniveau: Geschichte, Englisch und Politik-Wirtschaft, Prüfungsfächer mit grundlegendem Anforderungsniveau: Deutsch und Physik}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{08/2004 --\\06/2007}} & Erweiterter Sekundarabschluss I\\
+& \textsc{Realschule Achim}\\
+& \footnotesize{mit gut bestanden (2,30)}\\
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN %
+%%%%%%%%%%%%%%%%%
+\section{Publikationen}
+\subsection*{Zeitschriften}
+\begin{literature}
+\lititem Baratella, Nils; Bauer, Alexander Max; Grass, Helena Esther; Kornmesser, Stephan (Hrsg.) (in Vorbereitung): \enquote{Verschwörungserzählungen}. Schwerpunkt der \textit{Zeitschrift für Praktische Philosophie}.
+\end{literature}
+
+\subsection*{Beiträge in Zeitschriften}
+\begin{literature}
+\lititem Bauer, Alexander Max; Meyer, Frauke; Romann, Jan; Siebel, Mark; Traub, Stefan (2022): \enquote{Need, Equity, and Accountability. Evidence on Third-Party Distribution Decisions from a Vignette Study}. \textit{Social Choice and Welfare}. (begutachtet)
+
+\lititem Bauer, Alexander Max; Romann, Jan (2022): \enquote{Answers at Gunpoint. On Livengood and Sytsma's Revolver Case}. \textit{Philosophy of Science} 89 (1), S. 180--192. (begutachtet)
+
+\lititem Bauer, Alexander Max (2022): \enquote{Sated but Thirsty. A Prolegomenon to Multidimensional Measures of Need-Based Justice}. \textit{Axiomathes} 32, S. 529--538. (begutachtet)
+
+\lititem Bauer, Alexander Max (2021): \enquote{Christian Neuhäuser. Wie reich darf man
+sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophische Forschung} 75 (1), S. 160--164.
+
+\lititem Bauer, Alexander Max (2019): \enquote{Christian Neuhäuser. Reichtum als moralisches Problem}. \textit{Zeitschrift für Ethik und Moralphilosophie} 2 (2), S. 381--385.
+
+\lititem Bauer, Alexander Max (2017): \enquote{Axiomatic Foundations for Metrics of Distributive Justice Shown by the Example of Needs-Based Justice}. \textit{\enquote{forsch!}, Studentisches Online-Journal der Universität Oldenburg} 3 (1), S. 43--60. (begutachtet)
+
+\lititem Bauer, Alexander Max (2017): \enquote{Axiomatische Überlegungen zu Grundlagen für Maße der Verteilungsgerechtigkeit am Beispiel von Bedarfsgerechtigkeit}. \textit{\enquote{forsch!}, Studentisches Online-Journal der Universität Oldenburg} 3 (1), S. 23--42. (begutachtet)
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (2016): \enquote{Über die Frage, ob wir uns dazu entscheiden können, etwas zu glauben. Wider eines idealisierten Verständnisses des doxastischen Voluntarismus}. \textit{\enquote{forsch!}, Studentisches Online-Journal der Universität Oldenburg} 2 (2), S. 10--21. (begutachtet)
+\end{literature}
+
+\subsection*{Herausgaben}
+\begin{literature}
+\lititem Bauer, Alexander Max; Kornmesser, Stephan (Hrsg.) (in Vorbereitung): \textit{The Compact Compendium of Experimental Philosophy}. Berlin und Boston: Walter de Gruyter.
+
+\lititem Bauer, Alexander Max; Damschen, Gregor; Siebel, Mark (Hrsg.) (in Vorbereitung): \textit{Paradoxien. Grenzdenken und Denkgrenzen von A(llwissen) bis Z(eit)}. Paderborn: mentis.
+
+\lititem Bauer, Alexander Max; Baratella, Nils (Hrsg.) (2021): \textit{Oldenburger Jahrbuch für Philosophie 2019/2020}. Oldenburg: BIS-Verlag.
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (Hrsg.) (2020): \textit{Empirical Research and Normative Theory. Transdisciplinary Perspectives on Two Methodical Traditions Between Separation and Interdependence}. Berlin und Boston: Walter de Gruyter.
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (Hrsg.) (2019): \textit{Philosophie zwischen Sein und Sollen. Normative Theorie und empirische Forschung im Spannungsfeld}. Berlin und Boston: Walter de Gruyter.
+
+\lititem Bauer, Alexander Max; Baratella, Nils (Hrsg.) (2019): \textit{Oldenburger Jahrbuch für Philosophie 2017/2018}. Oldenburg: BIS-Verlag.
+\end{literature}
+
+\subsection*{Beiträge in Herausgaben}
+\begin{literature}
+\lititem Bauer, Alexander Max (2021): \enquote{Babylonische Befindlichkeiten. Hans-Helmuth Bruns' \enquote{Babel in Deutschland}}. In: Bauer, Alexander Max; Baratella, Nils (Hrsg.): \textit{Oldenburger Jahrbuch für Philosophie 2019/2020}. Oldenburg: BIS-Verlag. S. 283--290.
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (2020): \enquote{Two Worlds on the Brink of Colliding. On the Relationship Between Empirical Research and Normative Theory}. In: dies. (Hrsg.): \textit{Empirical Research and Normative Theory. Transdisciplinary Perspectives on Two Methodical Traditions Between Separation and Interdependence}. Berlin und Boston: Walter de Gruyter. S. 11--33.
+
+\lititem Bauer, Alexander Max (2019): \enquote{Zur Grundlegung empirisch informierter Maße der Bedarfsgerechtigkeit. Zwei Desiderata zwischen normativer Theorie, formaler Modellierung und empirischer Sozialforschung}. In: Bauer, Alexander Max; Meyerhuber, Malte Ingo (Hrsg.): \textit{Philosophie zwischen Sein und Sollen. Normative Theorie und empirische Forschung im Spannungsfeld}. Berlin und Boston: Walter de Gruyter. S. 179--220.
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (2019): \enquote{Zwei Welten am Rande der Kollision. Zum Verhältnis von empirischer Forschung und normativer Theorie, insbesondere vor dem Hintergrund der Ethik}. In: dies. (Hrsg.): \textit{Philosophie zwischen Sein und Sollen. Normative Theorie und empirische Forschung im Spannungsfeld}. Berlin und Boston: Walter de Gruyter. S. 13--37.
+
+\lititem Bauer, Alexander Max (2019): \enquote{\enquote{Wahrheit ist, was uns verbindet}. Den Absolventinnen und Absolventen der Fakultät IV zum Geleit}. In: Bauer, Alexander Max; Baratella, Nils (Hrsg.): \textit{Oldenburger Jahrbuch für Philosophie 2017/2018}. Oldenburg: BIS-Verlag. S. 353--357.
+
+\lititem Bauer, Alexander Max (2019): \enquote{Gerechtigkeit und Bedürfnis. Perspektiven auf den Begriff des \enquote{Bedürfnisses} vor dem Hintergrund der Bedarfsgerechtigkeit}. In: Bauer, Alexander Max; Baratella, Nils (Hrsg.): \textit{Oldenburger Jahrbuch für Philosophie 2017/2018}. Oldenburg: BIS-Verlag. S. 285--327.
+\end{literature}
+
+\subsection*{Einleitungen, Vorworte und Nachworte}
+\begin{literature}
+\lititem Bauer, Alexander Max; Baratella, Nils (2021): \enquote{Vorwort}. In: dies. (Hrsg.): \textit{Oldenburger Jahrbuch für Philosophie 2019/2020}. Oldenburg: BIS-Verlag. S. 5.
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (2020): \enquote{Epilogue. On Doxa and Aletheia}. In: dies. (Hrsg.): \textit{Empirical Research and Normative Theory. Transdisciplinary Perspectives on Two Methodical Traditions Between Separation and Interdependence}. Berlin und Boston: Walter de Gruyter. S. 337--342.
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (2020): \enquote{Introduction}. In: dies. (Hrsg.): \textit{Empirical Research and Normative Theory. Transdisciplinary Perspectives on Two Methodical Traditions Between Separation and Interdependence}. Berlin und Boston: Walter de Gruyter. S. 1--10.
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (2020): \enquote{Preface}. In: dies. (Hrsg.): \textit{Empirical Research and Normative Theory. Transdisciplinary Perspectives on Two Methodical Traditions Between Separation and Interdependence}. Berlin und Boston: Walter de Gruyter. S. VII--VIII.
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (2019): \enquote{Epilog. Zwischen doxa und aletheia}. In: dies. (Hrsg.): \textit{Philosophie zwischen Sein und Sollen. Normative Theorie und empirische Forschung im Spannungsfeld}. Berlin und Boston: Walter de Gruyter. S. 221--225.
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (2019): \enquote{Einleitung}. In: dies. (Hrsg.): \textit{Philosophie zwischen Sein und Sollen. Normative Theorie und empirische Forschung im Spannungsfeld}. Berlin und Boston: Walter de Gruyter. S. 1--11.
+
+\lititem Bauer, Alexander Max; Meyerhuber, Malte Ingo (2019): \enquote{Vorwort}. In: dies. (Hrsg.): \textit{Philosophie zwischen Sein und Sollen. Normative Theorie und empirische Forschung im Spannungsfeld}. Berlin und Boston: Walter de Gruyter. S. XI--XII.
+
+\lititem Bauer, Alexander Max; Baratella, Nils (2019): \enquote{Vorwort}. In: dies. (Hrsg.): \textit{Oldenburger Jahrbuch für Philosophie 2017/2018}. Oldenburg: BIS-Verlag. S. 5.
+\end{literature}
+
+\subsection*{Arbeitspapiere}
+\begin{literature}
+\lititem Wyszynski, Marc; Bauer, Alexander Max (2022): \enquote{Give What You Can, Take What You Need. The Effect of Framing on Rule-Breaking Behavior in Social Dilemmas}. \textit{FOR 2104 Working Paper} 2022--01.
+
+\lititem Bauer, Alexander Max; Meyer, Frauke; Romann, Jan; Siebel, Mark; Traub, Stefan (2020): \enquote{Need, Equity, and Accountability. Evidence on Third-Party Distributive Decisions from an Online Experiment}. \textit{FOR 2104 Working Paper} 2020--01.
+
+\lititem Bauer, Alexander Max (2018): \enquote{Sated but Thirsty. Towards a Multidimensional Measure of Need-Based Justice}. \textit{FOR 2104 Working Paper} 2018--03.
+
+\lititem Bauer, Alexander Max (2018): \enquote{Monotonie und Monotoniesensitivität als Desiderata für Maße der Bedarfsgerechtigkeit. Zu zwei Aspekten der Grundlegung empirisch informierter Maße der Bedarfsgerechtigkeit zwischen normativer Theorie, formaler Modellierung und empirischer Sozialforschung}. \textit{FOR 2104 Working Paper} 2018--01.
+
+\lititem Weiß, Arne Robert; Bauer, Alexander Max; Traub, Stefan (2017): \enquote{Needs as Reference Points. When Marginal Gains to the Poor do not Matter}. \textit{FOR 2104 Working Paper} 2017--13.
+
+\lititem Traub, Stefan; Bauer, Alexander Max; Siebel, Mark; Springhorn, Nils; Weiß, Arne Robert (2017): \enquote{On the Measurement of Need-Based Justice}. \textit{FOR 2104 Working Paper} 2017--12.
+\end{literature}
+
+
+%%%%%%%%%%%%%%%%%%
+% PRÄSENTATIONEN %
+%%%%%%%%%%%%%%%%%%
+\section{Präsentationen}
+\subsection*{Auf Einladung}
+\begin{longtable}{p{1,75cm}p{11,5cm}}
+\multirow{3}{1,75cm}{\footnotesize{08/12/2017}} & Mind the Gap -- Zur Vermittlung von normativer Theorie und empirischer Forschung\\
+& \footnotesize{Vortrag in der Reihe \enquote{Junge Philosophie} der Karl-Jaspers-Gesellschaft in Oldenburg; zusammen mit Malte Ingo Meyerhuber; auf Einladung von Ansgar Baumgart, Malte Unverzagt und Philip Penew}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{22/11/2016}} & Grundlagen für Maße der Bedarfsgerechtigkeit -- Axiomatische Überlegungen und empirische Untersuchungen\\
+& \footnotesize{Vortrag im Philosophischen Kolloquium an der Carl von Ossietzky Universität Oldenburg; zusammen mit Arne Robert Weiß; auf Einladung von Nils Baratella}\\
+\end{longtable}
+
+\subsection*{Begutachtet}
+\begin{longtable}{p{1,75cm}p{11,5cm}}
+\multirow{3}{1,75cm}{\footnotesize{07/09/2021}} & Need and Responsibility -- Experimental Philosophy Investigating Questions of Distributive Justice\\
+& \footnotesize{Vortrag auf dem 25. Kongress der Deutschen Gesellschaft für Philosophie (DGPhil) an der Friedrich-Alexander University Erlangen-Nürnberg; online wegen Pandemie}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{23/08/2021}} & Give What You Can, Take What You Need -- The Effect of Framing on Fraudulent Behavior in Social Dilemmas\\
+& \footnotesize{Poster auf der Subjective Probability, Utility, and Decision Making Conference an der University of Warwick; zusammen mit Marc Wyszynski; online wegen Pandemie}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{07/2021}} & Need and Responsibility -- Experimental Philosophy on Questions of Distributive Justice\\
+& \footnotesize{Vortrag angenommen für die 18. Biennial Conference of the International Society for Justice Research an der Católica Lisbon School of Business \& Economics; nicht gehalten wegen unvorhergesehener Umstände}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{18/06/2021}} & Austin in the Lab -- Experimental Evidence in Favor of the Constative-Performative Distinction\\
+& \footnotesize{Poster mit Kurzvortrag auf der 1. European Experimental Philosophy Conference an der Univerzita Karlova in Prag; zusammen mit Stephan Kornmesser; online wegen Pandemie}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{10/2020}} & Valides Werkzeug oder bloßes Rechenspiel? Zur moralischen Aussagekraft von Gedankenexperimenten\\
+& \footnotesize{Vortrag angenommen für die 8. Tagung für ​Praktische Philosophie an der Universität Salzburg; zusammen mit Malte Ingo Meyerhuber und Jan Romann; nicht stattgefunden wegen Pandemie}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{24/07/2020}} & Need and Responsibility\\
+& \footnotesize{Vortrag auf der Konferenz der Society for the Advancement of Behavioral Economics an der National Research University, Higher School of Economics in Moskau; online wegen Pandemie}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{21/06/2020}} & Need and Responsibility -- Experimental Philosophy on Questions of Distributive Justice\\
+& \footnotesize{Vortrag auf der 1. European Experimental Philosophy Conference an der Univerzita Karlova in Prag; online wegen Pandemie}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{05/2020}} & Need and Responsibility -- Experimental Philosophy on Questions of Distributive Justice\\
+& \footnotesize{Vortrag angenommen für die 20. International Conference on Moral and Political Philosophy an der Universitat de les Illes Balears in Palma; nicht stattgefunden wegen Pandemie}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{16/06/2019}} & Modern Day Ethics Between Empirical Research and Normative Theory\\
+& \footnotesize{Vortrag auf dem Swedish Congress of Philosophy (Filosofidagarna) an der Umeå Universitet}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{05/04/2019}} & Experiments on Needs-Based Justice -- When Marginal Gains to the Poor do not Matter\\
+& \footnotesize{Vortrag auf der 12th Annual University at Albany Philosophical Association Graduate Conference in Experimental Philosophy \enquote{Rage Against the Armchair} an der University at Albany, The State University of New York; kommentiert von Sydney Faught}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{08/12/2018}} & Empirisch informierte Indizes der Bedarfsgerechtigkeit -- Zu dem Versuch, Bedarfsgerechtigkeit zwischen normativer Theorie, mathematischer Formalisierung und empirischer Sozialforschung zu operationalisieren\\
+& \footnotesize{Vortrag auf dem 10. Doktorandinnen-Symposium der Österreichischen Gesellschaft für Philosophie (ÖGP) an der Alpen-Adria-Universität Klagenfurt}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{05/05/2018}} & Positive Psychologie zwischen empirischer Forschung und normativer Theorie\\
+& \footnotesize{Positionsreferat auf der 3. Konferenz der Deutschen Gesellschaft für Positiv-Psychologische Forschung (DGPPF) an der Ruhr-Universität Bochum; zusammen mit Malte Ingo Meyerhuber}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{08/06/2016}} & Empirisch informierte Maße der Bedarfsgerechtigkeit -- Zwischen normativer Theorie, mathematischer Formalisierung und empirischer Sozialforschung\\
+& \footnotesize{Vortrag auf der bundesweiten und fächerübergreifenden Konferenz für studentische Forschung \enquote{forschen@studium} an der Carl von Ossietzky Universität Oldenburg}\\
+\end{longtable}
+
+\subsection*{Andere}
+\begin{longtable}{p{1,75cm}p{11,5cm}}
+\multirow{3}{1,75cm}{\footnotesize{22/05/2022}} & Measuring Need-Based Distributive Justice Normatively and Empirically\\
+& \footnotesize{Poster auf dem Symposium zur Bedarfsgerechtigkeit der Forschergruppe \enquote{Bedarfsgerechtigkeit und Verteilungsprozeduren} (FOR 2104) der Deutschen Forschungsgemeinschaft (DFG) an der Universität Hamburg; zusammen mit Mark Siebel}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{14/02/2020}} & Types of Need\\
+& \footnotesize{Vortrag auf dem Workshop der Wissenschaftlichen Mitarbeiter der Forschergruppe \enquote{Bedarfsgerechtigkeit und Verteilungsprozeduren} (FOR 2104) der Deutschen Forschungsgemeinschaft (DFG) an der Jacobs University Bremen}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{12/02/2020}} & Need and Responsibility\\
+& \footnotesize{Vortrag auf dem Workshop der Forschergruppe \enquote{Bedarfsgerechtigkeit und Verteilungsprozeduren} (FOR 2104) der Deutschen Forschungsgemeinschaft (DFG) an der Jacobs University Bremen}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{22/11/2018}} & What Makes a Theory of Justice \enquote{Empirically Informed}? On the Possibilities and Impossibilities of Integrating Empirical Research Into Normative Theory\\
+& \footnotesize{Vortrag auf dem Workshop der wissenschaftlichen Mitarbeiter der Forschergruppe \enquote{Bedarfsgerechtigkeit und Verteilungsprozeduren} (FOR 2104) der Deutschen Forschungsgemeinschaft (DFG) an der Universität Bremen}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{16/02/2018}} & \enquote{Wahrheit ist, was uns verbindet}\\
+& \footnotesize{Grußwort auf der akademischen Abschlussfeier der Fakultät IV an der Carl von Ossietzky Universität Oldenburg}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{14/12/2017}} & Comparative and Non-Comparative Justice -- An Experimental Investigation in the Domain of Needs-Based Justice\\
+& \footnotesize{Vortrag auf dem Workshop für die wissenschaftlichen Mitarbeiter der Forschergruppe \enquote{Bedarfsgerechtigkeit und Verteilungsprozeduren} (FOR 2104) der Deutschen Forschungsgemeinschaft (DFG) an der Carl von Ossietzky Universität Oldenburg; zusammen mit Nils Springhorn}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{14/12/2017}} & Empirische interkulturelle Forschung zur Evaluation von Bedarfsgerechtigkeit vor dem Hintergrund von sozialisationsbedingten Verzerrungen\\
+& \footnotesize{Vortrag auf dem Workshop für die wissenschaftlichen Mitarbeiter der Forschergruppe \enquote{Bedarfsgerechtigkeit und Verteilungsprozeduren} (FOR 2104) der Deutschen Forschungsgemeinschaft (DFG) an der Carl von Ossietzky Universität Oldenburg}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{28/10/2017}} & Empirische Forschung und normative Theorie -- Eine Problembestimmung\\
+& \footnotesize{Vortrag auf der internationalen Sommerschule \enquote{Empirical Research and Normative Theory} im Rahmen der \enquote{Oldenburg School for the Social Sciences and the Humanities 2017} der Graduiertenschule für Gesellschafts- und Geisteswissenschaften (3GO) an der Carl von Ossietzky Universität Oldenburg; zusammen mit Malte Ingo Meyerhuber}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{12/02/2016}} & Entwicklung eines empirisch gestützen Maßes der Bedarfsgerechtigkeit -- Ein axiomatischer Ansatz\\
+& \footnotesize{Vortrag auf dem Workshop der Forschergruppe \enquote{Bedarfsgerechtigkeit und Verteilungsprozeduren} (FOR 2104) der Deutschen Forschungsgemeinschaft (DFG) am Hanse-Wissenschaftskolleg in Delmenhorst; zusammen mit Mark Siebel}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{07/07/2015}} & Mögliche Maße der Bedarfsgerechtigkeit -- Überlegungen zu Vektoren und Logarithmen\\
+& \footnotesize{Vortrag im Kolloquium für Doktoranden und Abschlussarbeiten bei Mark Siebel an der Carl von Ossietzky Universität Oldenburg}\\
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%
+% VERANSTALTUNGEN %
+%%%%%%%%%%%%%%%%%%%
+\section{Veranstaltungen}
+\begin{longtable}{p{1,75cm}p{11,5cm}}
+\multirow{3}{1,75cm}{\footnotesize{SoSe\\2022}} & Philosophisches Kolloquium\\
+& \footnotesize{Kolloquium des Instituts für Philosophie an der Carl von Ossietzky Universität Oldenburg; zusammen mit Helena Esther Grass und Tilo Wesche}\\
+& \footnotesize{mit Beiträgen von Michael Hampe, Lisa Herzog, Dagmar Kiesel und Ludgar Schwarte}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{SoSe\\2021}} & Nur Fußnoten zu Platon?\\
+& \footnotesize{Ringvorlesung an der Carl von Ossietzky Universität Oldenburg; zusammen Gregor Damschen, Stephan Kornmesser und Mark Siebel}\\
+& \footnotesize{mit Beiträgen von Rafael Ferber, Jörg Hardy, Christoph Helmig, Joachim Horvath, Mark Textor und Emanuel Viebahn}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{WiSe\\2019/2020}} & Paradoxien\\
+& \footnotesize{Ringvorlesung an der Carl von Ossietzky Universität Oldenburg; zusammen mit Gregor Damschen und Mark Siebel}\\
+& \footnotesize{mit Beiträgen von Inga Bones, Elke Brendel, Guido Kreis, Paul Näger, Norman Sieroka und Stefan Uppenkamp}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{13--15/12/2017}} & Workshop der Wissenschaftlichen Mitarbeiter\\
+& \footnotesize{Workshop im Karl-Jaspers-Haus Oldenburg für die wissenschaftlichen Mitarbeiter der Forschergruppe \enquote{Bedarfsgerechtigkeit und Verteilungsprozeduren} (FOR 2104) der Deutschen Forschungsgemeinschaft (DFG); zusammen mit Maximilian Lutz, Fabian Paetzel, Nils Springhorn und Arne Robert Weiß}\\
+& \footnotesize{mit Beiträgen von Meike Benker, Marina Chugunova, Andrew Lawrence Fassett, Jan Philipp Krügel, Maximilian Lutz, Sabine Neuhofer, Manuel Schwaninger, Nils Springhorn, Marc Wyszynski und Patricia Zauchner, sowie einem Methodenworkshop von Michael Jankowski}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{28--29/09/2017}} & Empirical Research and Normative Theory\\
+& \footnotesize{internationale Sommerschule an der Carl von Ossietzky Universität Oldenburg im Rahmen der \enquote{Oldenburg School for the Social Sciences and the Humanities 2017} der Graduiertenschule für Gesellschafts- und Geisteswissenschaften (3GO); zusammen mit Malte Meyerhuber und Rea Kodalle}\\
+& \footnotesize{mit Beiträgen von Max Agostini, Martijn Boot, Maarten Derksen, Niklas Dworazik, Carlos de Matos Fernandes, Andrea Klonschinski, Jannis Kreienkamp, Marvin Kunz, Bert Musschenga, Elsa Romfeld, Hanno Sauer, Sebastian Schleidgen, Mark Schweda und Lars Schwettmann, sowie zwei öffentlichen Vorträgen von Stefan Müller-Doohm und Philipp Hübl}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{09--10/07/2015}} & Ideengeschichte\\
+& \footnotesize{Workshop an der Carl von Ossietzky Universität Oldenburg; zusammen mit Maxi Berger und Mark Siebel}\\
+& \footnotesize{mit Beiträgen von Gottfried Gabriel, Ernst Müller und Falko Schmieder, sowie einem öffentlichen Vortrag von Wilhelm Schmidt-Biggemannan}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{28--29/01/2015}} & Das Öffentliche und das Private\\
+& \footnotesize{Fachtagung am Hannah-Arendt-Zentrum der Carl von Ossietzky Universität Oldenburg; zusammen mit Nils Baratella und Johann Kreuzer}\\
+& \footnotesize{mit Beiträgen von Oliver Bruns, Thomas Jung, Stefania Maffeis, Roland Reuß und Christian Schneider}\\
+\end{longtable}
+
+
+%%%%%%%%%
+% LEHRE %
+%%%%%%%%%
+\section{Lehre}
+\subsection*{Seminare}
+\begin{longtable}{p{1,75cm}p{11,5cm}}
+\multirow{3}{1,75cm}{\footnotesize{WiSe\\2020/2021}} & Einführung in die Experimentelle Philosophie\\
+& \footnotesize{Seminar an der Carl von Ossietzky Universität Oldenburg für Basismodule und Aufbaumodule der Philosophie sowie für den Professionalisierungsbereich; online wegen Pandemie}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{SoSe\\2020}} & Reichtum als moralisches Problem\\
+& \footnotesize{Seminar an der Carl von Ossietzky Universität Oldenburg für Basismodule, Aufbaumodule und Mastermodule der Philosophie sowie für den Professionalisierungsbereich; online wegen Pandemie}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{WiSe\\2019/2020}} & Ein Gestirn, auf dem kluge Tiere das Erkennen erfanden -- Sprache und Erkenntnis in den frühen Schriften Nietzsches\\
+& \footnotesize{Seminar an der Carl von Ossietzky Universität Oldenburg für Basismodule der Philosophie sowie für den Professionalisierungsbereich}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{SoSe\\2019}} & Suffizientarismus -- Zu einer Kritik der Unersättlichkeit\\
+& \footnotesize{Seminar an der Carl von Ossietzky Universität Oldenburg für Basismodule und Aufbaumodule der Philosophie sowie für den Professionalisierungsbereich}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{WiSe\\2018/2019}} & Sein und Sollen -- Abgründe und Brücken zwischen empirischer Forschung und normativer Theorie\\
+& \footnotesize{Seminar an der Carl von Ossietzky Universität Oldenburg für Basismodule und Aufbaumodule der Philosophie sowie für den Professionalisierungsbereich}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{WiSe\\2017/2018}} & Eduard Beaucamp und die Leipziger Schule -- Ästhetik zwischen Kontinuität und Bruch\\
+& \footnotesize{Seminar an der Carl von Ossietzky Universität Oldenburg für Aufbaumodule und Mastermodule der Philosophie sowie für den Professionalisierungsbereich}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{SoSe\\2017}} & Operationalisierung von Verteilungsgerechtigkeit -- Zur Grundlegung der Messbarkeit von Gerechtigkeit zwischen normativer Theorie und formaler Modellierung\\
+& \footnotesize{Seminar an der Carl von Ossietzky Universität Oldenburg für Basismodule, Aufbaumodule und Mastermodule der Philosophie sowie für den Professionalisierungsbereich}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{WiSe\\2015/2016}} & Nietzsche -- Frühe Schriften\\
+& \footnotesize{Seminar an der Carl von Ossietzky Universität Oldenburg für Aufbaumodule, Vertiefungsmodule und Mastermodule der Philosophie sowie für das Studium Generale des Centers für lebenslanges Lernen (C3L); zusammen mit Nils Baratella}\\
+\end{longtable}
+
+\subsection*{Tutorien und Übungen}
+\begin{longtable}{p{1,75cm}p{11,5cm}}
+\multirow{3}{1,75cm}{\footnotesize{SoSe\\2014\\2015}} & Einführung in die Praktische Philosophie\\
+& \footnotesize{Tutorium an der Carl von Ossietzky Universität Oldenburg zu der gleichnamigen Vorlesung bei Martin Vialon (SoSe 2014) und Michael Städtler (SoSe 2015)}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{WiSe\\2013/2014\\2014/2015\\2015/2016\\2016/2017\\2017/2018\\2018/2019}} & Einführung in das wissenschaftliche Arbeiten\\
+& \footnotesize{Übung an der Carl von Ossietzky Universität Oldenburg; zusammen mit Marco Stawinoga (WiSe 2013/2014 und 2014/2015), Katja Vagelpohl (WiSe 2015/2016 und 2016/2017) sowie Maximilian Paul Schulz (WiSe 2017/2018 und 2018/2019)}\\
+\\
+\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{WiSe\\2012/2013\\2013/2014\\2014/2015\\2015/2016\\2016/2017}} & Einführung in die Theoretische Philosophie\\
+& \footnotesize{Tutorium an der Carl von Ossietzky Universität Oldenburg zu der gleichnamigen Vorlesung bei Mark Siebel}\\
+\\
+\\
+\end{longtable}
+
+\subsection*{Abschlussarbeiten}
+\begin{literature}
+\lititem Berndt, Juliane (2022): \textit{Reichtum verpflichtet. Inwiefern können Mieths Kriterien für positive Pflichten eine Stütze für Neuhäusers Reform- und Änderungsvorschläge hinsichtlich moralisch problematischen Reichtums sein?} (Bachelorarbeit an der Carl von Ossietzky Universität Oldenburg; Zweitprüfer: Mark Siebel)
+
+\lititem Roggow, Rafael (2022): \textit{Zum Einsatz von Videospielen im Werte-und-Normen-Unterricht. Ein Unterrichtsentwurf zum Thema \enquote{Handlungsutilitarismus} vor dem Hintergrund des Videospiels \enquote{Star Wars: Knights of the Old Republic II}} (Masterarbeit an der Carl von Ossietzky Universität Oldenburg; Zweitprüferin: Susanne Möbuß)
+
+\lititem Steinmetz, Esther Mareike (2021): \textit{Zur unterrichtlichen Implementation sozialer Medien im Themenkomplex \enquote{Wahrheit und Wirklichkeit}} (Bachelorarbeit an der Carl von Ossietzky Universität Oldenburg; Erstprüferin: Susanne Möbuß)
+
+\lititem Ostrop, Gero (2021): \textit{Eine Kritik der Kritik Karl Poppers an Platon im Werk \enquote{Die offene Gesellschaft und ihre Feinde}} (Masterarbeit an der Carl von Ossietzky Universität Oldenburg; Erstprüferin: Susanne Möbuß)
+
+\lititem Gründemann, Jonas (2021): \textit{Kompetenzorientierung im Werte-und-Normen-Unterricht an beruflichen Gymnasien in Niedersachsen} (Masterarbeit an der Carl von Ossietzky Universität Oldenburg; Erstprüferin: Christa Runtenberg)
+
+\lititem Storr, Jana (2021): \textit{Leben, sterben, weiterleben. Über das digitale Nachleben und seine Konsequenzen} (Masterarbeit an der Carl von Ossietzky Universität Oldenburg; Erstprüferin: Susanne Möbuß)
+
+\lititem Richtsmeier, Karsten (2021): \textit{Eine ethische Auseinandersetzung mit den Corona-Maßnahmen. Inwiefern lässt sich der staatliche Paternalismus während der Corona-Krise aus der Perspektive des klassischen Utilitarismus rechtfertigen?} (Bachelorarbeit an der Carl von Ossietzky Universität Oldenburg; Zweitprüfer: Tilo Wesche)
+
+\lititem Roggow, Rafael (2021): \textit{Ethik in Computerspielen. Zur Repräsentation des Handlungsutilitarismus nach Bentham im Videospiel \enquote{Star Wars: Knights of the Old Republic II}} (Bachelorarbeit an der Carl von Ossietzky Universität Oldenburg; Zweitprüferin: Christa Runtenberg)
+
+\lititem Lutze, Daniela (2020): \textit{\enquote{Die Banalität des Bösen}. Der Begriff des Bösen in der Philosophie Hannah Arendts und vor dem Hintergrund der sozialpsychologischen Untersuchungen Philip Zimbardos} (Bachelorarbeit an der Carl von Ossietzky Universität Oldenburg; Erstprüferin: Susanne Möbuß)
+
+\lititem Lüschen, Hilke (2020): \textit{Versprechen in Politischer Philosophie und Sprachphilosophie} (Masterarbeit an der Carl von Ossietzky Universität Oldenburg; Erstprüfer: Mark Siebel)
+
+\lititem Abheiden, Tobias (2019): \textit{Eine kritische Auseinandersetzung mit den anthropologischen Aspekten des Begriffs des Alterns bei Aubrey de Grey} (Bachelorarbeit an der Carl von Ossietzky Universität Oldenburg; Zweitprüferin: Christa Runtenberg)
+\end{literature}
+
+
+%%%%%%%%%%%
+% GREMIEN %
+%%%%%%%%%%%
+\section{Gremien}
+\begin{longtable}{p{1,75cm}p{11,5cm}}
+\multirow{3}{1,75cm}{\footnotesize{04/2019 --\\04/2020}} & Promovierendenvertreter\\
+& \footnotesize{Vertretung der Promovierenden an der Carl von Ossietzky Universität Oldenburg; beratendes Mitglied im Fakultätsrat der Fakultät IV}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{seit 04/2019}} & Stellvertretender Mittelbauvertreter\\
+& \footnotesize{Vertretung des Mittelbaus im Institutsrat des Instituts für Philosophie der Carl von Ossietzky Universität Oldenburg; stellvertretender Mittelbauvertreter im Prüfungsausschuss für den Fachmaster Philosophie}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{seit 05/2018}} & Promovierendenvertreter\\
+& \footnotesize{Vertretung der Promovierenden der Fakultät IV im Direktorium der Graduiertenschule für Gesellschafts- und Geisteswissenschaften (3GO) an der der Carl von Ossietzky Universität Oldenburg}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{04/2017 --\\04/2018}} & Stellvertretender Promovierendenvertreter\\
+& \footnotesize{Vertretung der Promovierenden der Fakultät IV im Direktorium der Graduiertenschule für Gesellschafts- und Geisteswissenschaften (3GO) an der der Carl von Ossietzky Universität Oldenburg}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{04/2017 --\\03/2018}} & Stellvertretender Studierendenvertreter\\
+& \footnotesize{Vertretung der Studierenden im Fakultätsrat der Fakultät IV der Carl von Ossietzky Universität Oldenburg}\\
+\end{longtable}
+
+
+%%%%%%%%%%%%%
+% GUTACHTEN %
+%%%%%%%%%%%%%
+\section{Gutachten}
+\begin{itemize}
+   \item Axiomathes (2020, 2021)
+   \item \enquote{forsch!}, Studentisches Online-Journal der Universität Oldenburg (2018)
+   \item Zeitschrift für Praktische Philosophie (2021)
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%
+% AUSZEICHNUNGEN %
+%%%%%%%%%%%%%%%%%%
+\section{Auszeichnungen und Stipendien}
+\begin{longtable}{p{1,75cm}p{11,5cm}}
+\multirow{3}{1,75cm}{\footnotesize{2017}} & Master of Arts (Philosophie) mit Auszeichnung\\
+& \footnotesize{von der Carl von Ossietzky Universität Oldenburg}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{2015/2016}} & Deutschlandstipendium\\
+& \footnotesize{von der Carl von Ossietzky Universität Oldenburg für herausragende Leistungen im Studium}\\
+\\
+\multirow{3}{1,75cm}{\footnotesize{2014/2015}} & Deutschlandstipendium\\
+& \footnotesize{von der Carl von Ossietzky Universität Oldenburg für herausragende Leistungen im Studium}\\
+\end{longtable}
+
+
+%%%%%%%%%%%%%%%%%%%%
+% MITGLIEDSCHAFTEN %
+%%%%%%%%%%%%%%%%%%%%
+\section{Mitgliedschaften}
+\begin{itemize}
+   \item Deutsche Gesellschaft für Philosophie
+   \item Gesellschaft für Analytische Philosophie
+   \item Karl-Jaspers-Gesellschaft
+   \item Alumni-Netzwerk der Carl von Ossietzky Universität Oldenburg
+   \item Alumni-Netzwerk der Helmut-Schmidt-Universität, Universität der Bundeswehr Hamburg
+   \item Verein ehemaliger Verdener Domgymnasiasten
+   \item Wissenschaftliche Buchgesellschaft
+\end{itemize}
+
+\end{document}
