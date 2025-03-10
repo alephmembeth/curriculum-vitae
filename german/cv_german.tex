@@ -8,6 +8,8 @@
 \usepackage[ngerman]{babel}
 \usepackage{color,graphicx}
 \usepackage[autostyle,german=guillemets]{csquotes}
+\usepackage{datetime}
+   \newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
 \usepackage{fontspec}
 \usepackage{hyperref}
    \definecolor{lcolor}{rgb}{0,0,0}
@@ -55,7 +57,7 @@
    }\bigskip\par}
 
 \par{\centering
-   {\Large\textsc{Januar 2025}
+   {\Large\textsc{\monthyeardate\today}
    }\bigskip\par}
 
 \vfill
