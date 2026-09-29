@@ -35,7 +35,9 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[SmallCapsFont=fontin_small_caps.otf,BoldFont=fontin_bold.otf,ItalicFont=fontin_italic.otf]{fontin.otf}
 
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\definecolor{cvheading}{HTML}{8B629C}
+\titleformat{\section}{\Large\scshape\raggedright\color{cvheading}}{}{0em}{}[{\color{black}\titlerule}]
+\titleformat*{\subsection}{\large\bfseries\color{cvheading}}
 \titlespacing{\section}{0pt}{15pt}{15pt}
 
 \setlength{\fboxsep}{0pt}
@@ -52,7 +54,7 @@
    }\bigskip\par}
 
 \par{\centering
-   {\Huge\textsc{Alexander Max Bauer}
+   {\Huge\color{cvheading}\textsc{Alexander Max Bauer}
    }\bigskip\par}
 
 \vspace{1cm}
@@ -66,7 +68,8 @@
 
 \vfill
 \begin{center}
-   \fbox{\includegraphics[scale=0.1]{max_3.png}}
+   \fbox{\includegraphics[scale=0.75]{max_5.png}}\\
+   {\scriptsize \textcolor{gray}{Illustration: Deronde Smith}}
 \end{center}
 \vfill
 
@@ -77,18 +80,18 @@
 \clearpage
 \section{Contact Information}
 \begin{longtable}{p{4cm}p{11.5cm}}
-   \textsc{Address}     & Carl von Ossietzky University of Oldenburg\\
-                        & School of Humanities and Social Sciences\\
-                        & Department of Philosophy\\
-                        & Ammerländer Heerstraße 114\,--\,119\\
-                        & 26129 Oldenburg\\
-                        & Germany \\
-                        & \\
-   \textsc{Phone}       & +49 (0)441 798 2034\\
-                        & \\
-   \textsc{Email}      & \href{mailto:alexander.max.bauer@uol.de}{alexander.max.bauer@uol.de}\\
-                        & \\
-   \textsc{Website}     & \href{http://www.alexandermaxbauer.de/}{www.alexandermaxbauer.de}
+   \textsc{Address}     & Carl von Ossietzky University of Oldenburg                             \\
+                        & School of Humanities and Social Sciences                               \\
+                        & Department of Philosophy                                               \\
+                        & Ammerländer Heerstraße 114\,--\,119                                    \\
+                        & 26129 Oldenburg                                                        \\
+                        & Germany                                                                \\
+                        &                                                                        \\
+   \textsc{Phone}       & +49 (0)441 798 2034                                                    \\
+                        &                                                                        \\
+   \textsc{Email}       & \href{mailto:alexander.max.bauer@uol.de}{alexander.max.bauer@uol.de}   \\
+                        &                                                                        \\
+   \textsc{Website}     & \href{http://www.alexandermaxbauer.de/}{www.alexandermaxbauer.de}      \\
 \end{longtable}
 
 
@@ -98,17 +101,18 @@
 \vspace{0.5cm}
 \section{Areas and Tools}
 \begin{longtable}{p{4cm}p{11.5cm}}
-   \textsc{Areas of Specialisation}   & Experimental Philosophy, Need-Based Distributive Justice,\\
-                                      & Causation\\
-                                      & \\
-   \textsc{Areas of Competence}       & Game Studies, Distributive Justice, Philosophy of Science,\\
-                                      & Metaphysics\\
-                                      & \\
-   \textsc{Areas of Interest}         & Digital Humanities, Metaphilosophy, Philosophy of Language\\
-                                      & \\
-   \textsc{Historical Focus}          & Aristotle, Friedrich Nietzsche\\
-                                      & \\
-   \textsc{Tools of Choice}           & \LaTeX, Zotero, LimeSurvey, Python, R, Git
+   \textsc{Areas of Specialisation}   & Causation, Empirical Justice Research,                     \\
+                                      & Experimental Philosophy, Need-Based Distributive Justice   \\
+                                      &                                                            \\
+   \textsc{Areas of Competence}       & Distributive Justice, Game Studies,                        \\
+                                      & Metaphysics, Philosophy of Science                         \\
+                                      &                                                            \\
+   \textsc{Areas of Interest}         & Conspiracy Narratives, Digital Humanities,                 \\
+                                      & Metaphilosophy, Philosophy of Language                     \\
+                                      &                                                            \\
+   \textsc{Historical Focus}          & Aristotle, Friedrich Nietzsche                             \\
+                                      &                                                            \\
+   \textsc{Tools of Choice}           & Git, \LaTeX, LimeSurvey, Python, Zotero                    \\
 \end{longtable}
 
 
@@ -156,7 +160,7 @@
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{3}{2.5cm}{\footnotesize{04/2017\,--\,02/2024}} & Doctor philosophiae (Philosophy)\\
 & \textsc{University of Oldenburg}\\
-& \footnotesize{passed with highest distinction (summa cum laude); cumulative thesis: \enquote{Empirische Studien zu Fragen der Bedarfsgerechtigkeit} (examiner: Mark Siebel, second examiner: Markus Tepe); date of the disputation: 14/02/2024 (further members of the commission: Dirk Büsch, Susanne Möbuß, and Mark Schweda)}\\
+& \footnotesize{passed with highest distinction (\textit{summa cum laude}); cumulative thesis: \enquote{Empirische Studien zu Fragen der Bedarfsgerechtigkeit} (examiner: Mark Siebel, second examiner: Markus Tepe); date of the disputation: 14/02/2024 (further members of the commission: Dirk Büsch, Susanne Möbuß, and Mark Schweda)}\\
 \\
 \multirow{3}{2.5cm}{\footnotesize{04/2014\,--\,03/2017}} & Master of Arts (Philosophy)\\
 & \textsc{University of Oldenburg}\\
@@ -183,22 +187,52 @@
 \section{Publications}
 
 
-%%%%%%%%%%%%%%%%%%
-% IN PREPARATION %
-%%%%%%%%%%%%%%%%%%
-\subsection*{Publications in Preparation or Under Review}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - UNDER REVIEW %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Publications Under Review}
 \begin{literature}
-\lititem Schippers, Michael; Siebel, Mark; Kornmesser, Stephan; Bauer, Alexander Max (in preparation): \enquote{So Close and Yet So Far. Why Measures of Divergence and Similarity Make Bad Measures of Coherence.}
+\lititem Gahtan, Jamie; Bauer, Alexander Max; Bäker, Neele; Eilts, Jule; Wilke, Jessica (in revision for \textit{Current Psychology}): \enquote{Moral Self and Socioeconomic Profiles in Middle Childhood. Examining the Links to Self-Esteem, Prosocial Behavior, and Aggressive Behavior in a Cluster-Analytic Study}.
 
-\lititem Bauer, Alexander Max; Kornmesser, Stephan; Alfano, Mark; Allard, Aurélien; Baumgartner, Lucien; Cova, Florian; Engelhardt, Paul; Fischer, Eugen; Meyer, Henrike; Reuter, Kevin; Sytsma, Justin; Thompson, Kyle; Wyszynski, Marc (in preparation): \textit{Experimentelle Philosophie. Eine Einführung in Methoden und Werkzeuge.} Berlin: J.\,B. Metzler.
+\lititem Bauer, Alexander Max; Klausner, Lukas Daniel: Menten, Alina; Sturm, Christian (in revision for \textit{Paidia -- Zeitschrift für Computerspielforschung
+}): \enquote{Baustelle Jubiläumssammelband. Rückblicke und Reflexionen zur Genese des Sammelbands \enquote{Geisteswissenschaften und Digitale Spiele: Debatten, Data \& Desiderata}}.
 
-\lititem Bauer, Alexander Max; Siebel, Mark (eds.) (in preparation): \textit{Advances in Experimental Philosophy of Distributive Justice}, London, New York, Oxford, New Delhi, and Sydney: Bloomsbury Academic.
+\lititem Bauer, Alexander Max; Klausner, Lukas Daniel (in revision for \textit{Philosophical Psychology}): \enquote{\enquote{But a Cloak of Letters}. Exploring Philosophical Dialogues in Digital Games Through Planescape: Torment}.
+
+\lititem Bauer, Alexander Max; Willemsen, Pascale; Kinzler, Pauline Maresi (submitted to \textit{Cognition}): \enquote{When the Apple Doesn't Fall Far From the Tree, Blame the Apple! How Laypeople Assign Moral Responsibility to Agents With Morally Problematic Upbringings}.
+
+\lititem Schippers, Michael; Siebel, Mark; Bauer, Alexander Max; Kornmesser, Stephan (in Begutachtung bei \textit{Studia Logica}): \enquote{So Close and Yet So Far. Why Measures of Divergence and Similarity Make Bad Measures of Coherence}.
+
+\lititem Bauer, Alexander Max; Birken, Jacob; Klausner,  Lukas Daniel (in revision): \enquote{The Truth Is Out There. How the Grand Theft Auto Series Plays With Conspiracy Narratives}. In: Günther, Ann-Kathrin Michelle; Inderst, Rudolf Thomas; Konietzko, Leonie Eva;  Meis, Daniel (eds.): \textit{\enquote{So $\ldots$ this is what the dream feels like. This is the victory we longed for.} Diskurse, Dynamiken und Dissonanzen in Grand Theft Auto}.
 \end{literature}
 
 
-%%%%%%%%%%%%%%
-% MONOGRAPHS %
-%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - IN PREPARATION %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Publications in Preparation}
+\begin{literature}
+\lititem Bauer, Alexander Max; Bosen, Jennifer; Klausner, Lukas Daniel (in preparation). \enquote{Words Without Speakers. On the Perception of Large Language Models as Anthromorph(ised) Interlocutors}.
+
+\lititem Bauer, Alexander Max; Siebel, Mark (eds.) (in preparation): \textit{Advances in Experimental Philosophy of Distributive Justice}. London, New York, Oxford, New Delhi, and Sydney: Bloomsbury Academic.
+
+\lititem Bauer, Alexander Max; Betzing, David; Birken, Jacob; Hagemann, Simon; Klausner, Lukas Daniel; Menten, Alina; Sturm, Christian; Unterhuber, Tobias (eds.) (in preparation): \textit{Geisteswissenschaften und Digitale Spiele. Debatten, Data \& Desiderata}. Glückstadt: Verlag Werner Hülsbusch.
+
+\lititem Bauer, Alexander Max; Betzing, David; Birken, Jacob; Hagemann, Simon; Klausner, Lukas Daniel; Menten, Alina; Sturm, Christian; Unterhuber, Tobias (in preparation) (eds.): \textit{Geisteswissenschaften und Digitale Spiele. Debatten, Data \& Desiderata}. Glückstadt: Verlag Werner Hülsbusch.
+
+\lititem Bauer, Alexander Max; Betzing, David; Birken, Jacob; Hagemann, Simon; Klausner, Lukas Daniel; Menten, Alina; Sturm, Christian; Unterhuber, Tobias (in preparation): \enquote{Debatten, Data \& Desiderata. Vom Jubiläum zum Sammelband}. In: id. (eds.): \textit{Geisteswissenschaften und Digitale Spiele. Debatten, Data \& Desiderata}. Glückstadt: Verlag Werner Hülsbusch.
+
+\lititem Bauer, Alexander Max; Klausner, Lukas Daniel; Unterhuber, Tobias (in preparation): \enquote{\enquote{Einhundert Leute haben wir gefragt $\ldots$} Einblicke in Methodenvielfalt und Interdisziplinarität der Game Studies im deutschsprachigen Raum}. In: Bauer, Alexander Max; Betzing, David; Birken, Jacob; Hagemann, Simon; Klausner, Lukas Daniel; Menten, Alina; Sturm, Christian; Unterhuber, Tobias (eds.) (in preparation): \textit{Geisteswissenschaften und Digitale Spiele. Debatten, Data \& Desiderata}. Glückstadt: Verlag Werner Hülsbusch.
+
+\lititem Bauer, Alexander Max; Hagemann, Simon; Klausner, Lukas Daniel (in preparation): \enquote{\enquote{Menschen, Communitys, Dynamiken beobachten}. Ein Gespräch mit Robert Glashüttner über Spielejournalismus zwischen Aufmerksamkeitsökonomie und Kulturkritik}. In: Bauer, Alexander Max; Betzing, David; Birken, Jacob; Hagemann, Simon; Klausner, Lukas Daniel; Menten, Alina; Sturm, Christian; Unterhuber, Tobias (eds.) (in preparation): \textit{Geisteswissenschaften und Digitale Spiele. Debatten, Data \& Desiderata}. Glückstadt: Verlag Werner Hülsbusch.
+
+\lititem Willemsen, Pascale; Bauer, Alexander Max; Shurakov, Nikolai (in preparation): \enquote{Experimentelle Philosophie}. In: Glock, Hans-Johann; Pfisterer, Christoph; Roski, Stefan (eds.): \textit{Handbuch Analytische Philosophie}. Berlin: J.\,B. Metzler.
+\end{literature}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - MONOGRAPHS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Monographs}
 \begin{literature}
 \lititem Bauer, Alexander Max (2025): \textit{Empirical Studies on Questions of Need-Based Distributive Justice}. Paderborn: mentis.
@@ -209,18 +243,18 @@
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%
-% IN MONOGRAPHS %
-%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - IN MONOGRAPHS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Contributions to Monographs With Multiple Authors}
 \begin{literature}
 \lititem Bauer, Alexander Max; Kornmesser Stephan; Meyer, Henrike (2024): \enquote{Constative and Performative Utterances, $\chi^2$ Tests, and LimeSurvey.} In: Kornmesser, Stephan; Bauer, Alexander Max; Alfano, Mark; Allard, Aurélien; Baumgartner, Lucien; Cova, Florian; Engelhardt, Paul; Fischer, Eugen; Meyer, Henrike; Reuter, Kevin; Sytsma, Justin; Thompson, Kyle; Wyszynski, Marc: \textit{Experimental Philosophy for Beginners. A Gentle Introduction to Methods and Tools}. Cham: Springer.
 \end{literature}
 
 
-%%%%%%%%%%%%
-% JOURNALS %
-%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - JOURNALS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Journals and Special Issues}
 \begin{literature}
 \lititem Bauer, Alexander Max; Ellmers, Sven; Nosthoff, Anna-Verena; Yildirim, Aylin (eds.) (in preparation): \textit{Oldenburger Philosophische Studien}.
@@ -229,9 +263,9 @@
 \end{literature}
 
 
-%%%%%%%%%%%%%%%
-% IN JOURNALS %
-%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - IN JOURNALS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Contributions to Journals}
 \begin{literature}
 \lititem Henne, Paul; Pedryc, Wiktoria; Deichen, Benjamin; Bauer, Alexander Max; Sankner, Annika; Varghese, Saniya; Moonlight, Isaiah (2025): \enquote{The Kraemer Effect Reconsidered.} \textit{New Ideas in Psychology} 80, 101209. (peer-reviewed)
@@ -264,9 +298,9 @@
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%%
-% EDITED VOLUMES %
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - EDITED VOLUMES %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Edited Volumes}
 \begin{literature}
 \lititem Bauer, Alexander Max; Grass, Helena Esther (eds.) (2024): \textit{Oldenburger Jahrbuch für Philosophie 2021/2022}. Oldenburg: University of Oldenburg Press.
@@ -285,9 +319,9 @@
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%%%%%
-% IN EDITED VOLUMES %
-%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - IN EDITED VOLUMES %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Contributions to Edited Volumes}
 \begin{literature}
 \lititem Bauer, Alexander Max; Romann, Jan (2024): \enquote{Equal Deeds, Different Needs. Need, Accountability, and Resource Availability in Third-Party Distribution Decisions.} In: Knobe, Joshua; Nichols, Shaun (eds.): \textit{Oxford Studies in Experimental Philosophy}. Vol. 5. Oxford: Oxford University Press. 7--31. (peer-reviewed)
@@ -308,9 +342,9 @@
 \end{literature}
 
 
-%%%%%%%%%%%%
-% PREFACES %
-%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - PREFACES %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Prefaces, Introductions, and Epilogues}
 \begin{literature}
 \lititem Kornmesser, Stephan; Bauer, Alexander Max; Alfano, Mark; Allard, Aurélien; Baumgartner, Lucien; Cova, Florian; Engelhardt, Paul; Fischer, Eugen; Meyer, Henrike; Reuter, Kevin; Sytsma, Justin; Thompson, Kyle; Wyszynski, Marc (2024): \enquote{Introduction. Setting Out For New Shores.} In: id. (eds.): \textit{Experimental Philosophy for Beginners. A Gentle Introduction to Methods and Tools}. Cham: Springer. 1--18.
@@ -341,9 +375,9 @@
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%%
-% WORKING PAPERS %
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - WORKING PAPERS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Working Papers}
 \begin{literature}
 \lititem Henne, Paul; Pedryc, Wiktoria; Deichen, Benjamin; Bauer, Alexander Max; Sankner, Annika; Varghese, Saniya; Moonlight, Isaiah (2025): \enquote{The Kraemer Effect Reconsidered.} \textit{OSF Preprints}.
@@ -366,18 +400,18 @@
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%
-% TRANSLATIONS %
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - TRANSLATIONS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Translations}
 \begin{literature}
 \lititem Priest, Graham (2023): \enquote{Paradoxie und Parakonsistenz.} Transl. by Bauer, Alexander Max; Damschen, Gregor; Siebel, Mark. In: id. (eds.): \textit{Paradoxien. Grenzdenken und Denkgrenzen von A(llwissen) bis Z(eit)}. Paderborn: mentis. 225--248.
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%
-% DISSERTATION %
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS - DISSERTATION %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Dissertation}
 \begin{literature}
 \lititem Bauer, Alexander Max (2024): \textit{Empirische Studien zu Fragen der Bedarfsgerechtigkeit.} Dissertation. University of Oldenburg.
@@ -391,9 +425,9 @@
 \section{Presentations}
 
 
-%%%%%%%%%%%
-% INVITED %
-%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRESENTATIONS - INVITED %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Invited}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{20/07/2024}} & Poisoned Babies, Shot Fathers, and Ruined Experiments -- Experimental Evidence in Favor of the Compositionality Constraint of Actual Causation\\
@@ -407,9 +441,9 @@
 \end{longtable}
 
 
-%%%%%%%%%%%%
-% REVIEWED %
-%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRESENTATIONS - REVIEWED %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Reviewed}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{12/07/2025}} & Empirical Studies on Questions of Need-Based Distributive Justice\\
@@ -462,10 +496,9 @@
 \end{longtable}
 
 
-%%%%%%%%%%
-% OTHERS %
-%%%%%%%%%%
-\clearpage % tmp %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRESENTATIONS - OTHERS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Others}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{29/11/2025}} & Jubiläumssammelband \enquote{Geisteswissenschaften und Digitale Spiele -- Debatten, Data \& Desiderata}\\
@@ -504,8 +537,6 @@
 \multirow{2}{2.5cm}{\footnotesize{28/10/2017}} & Empirische Forschung und normative Theorie -- Eine Problembestimmung\\
 & \footnotesize{presentation at the summer school \enquote{Empirical Research and Normative Theory} at the \enquote{Oldenburg School for the Social Sciences and the Humanities 2017} of the Graduate School for the Social Sciences and the Humanities (3GO); University of Oldenburg; jointly with Malte Ingo Meyerhuber}\\
 \\
-\\ % tmp %
-\\ % tmp %
 \multirow{2}{2.5cm}{\footnotesize{12/02/2016}} & Entwicklung eines empirisch gestützen Maßes der Bedarfsgerechtigkeit -- Ein axiomatischer Ansatz\\
 & \footnotesize{presentation at the meeting of the research group \enquote{Need-Based Justice and Distribution Procedures} (FOR 2104) of the German Research Foundation (DFG); Hanse-Wissenschaftskolleg, Institute for Advanced Study (HWK) in Delmenhorst; jointly with Mark Siebel}\\
 \\
@@ -520,11 +551,16 @@
 \clearpage
 \section{Events}
 \begin{longtable}{p{2.5cm}p{11cm}}
-\multirow{3}{2.5cm}{\footnotesize{Winter 2026/2027}} & Topics in the Cognitive Sciences of Morality\\
-& \footnotesize{lecture series; University of Zurich and University of Oldenburg; organised jointly with Pascale Willemsen}\\
+\multirow{3}{2.5cm}{\footnotesize{in preparation}} & Greifswald Oldenburg Lectures\\
+& \footnotesize{lecture series; University of Greifswald and University of Oldenburg; organised jointly with Gregor Damschen and Mark Siebel}\\
+\\
+\multirow{3}{2.5cm}{\footnotesize{Winter 2026/2027}} & Topics in the Cognitive Science of Morality\\
+& \footnotesize{lecture series; University of Zurich and University of Oldenburg; organised jointly with Pascale Willemsen; also course at master's level}\\
+& \footnotesize{featuring contributions by Sebastian Bernhard, Joanna Demaree-Cotton, Vilius Dranseika, Nicole Gotzner, Dongwoo Kim, Miklós Kürthy, Hyungrae Noh, Kevin Reuter, and Pascale Willemsen}\\
 \\
 \multirow{3}{2.5cm}{\footnotesize{Summer 2026}} & Wege in den Beruf -- Außerschulische Perspektiven für Geistes-, Sprach- und Kulturwissenschaftler*innen\\
 & \footnotesize{lecture series; University of Oldenburg; organised jointly with Friederike Nastold}\\
+& \footnotesize{featuring contributions by Lennert Brinkhoff, Monika Eden, Solveig Elias, Nicole Griese, Holger Leerhoff, Hilke Lüschen, Jonas Schoster, and Thomas Wachtendorf }\\
 \\
 \multirow{3}{2.5cm}{\footnotesize{Summer 2022\\Winter 2022/2023\\Summer 2023\\Winter 2023/2024\\Summer 2024\\Winter 2024/2025}} & Philosophisches Kolloquium\\
 & \footnotesize{the Department of Philosophy's colloquium; University of Oldenburg; organised jointly with Helena Esther Grass (summer 2022), Gesa Wellmann (summer 2023 -- winter 2024/2025), Tilo Wesche (summer 2022 -- winter 2024/2025), Malte Maria Unverzagt (winter 2024/2025), and Matthias Bormuth (winter 2024/2025)}\\
@@ -563,11 +599,14 @@
 \section{Teaching}
 
 
-%%%%%%%%%%%
-% COURSES %
-%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+% TEACHING - COURSES %
+%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Courses}
 \begin{longtable}{p{2.5cm}p{11cm}}
+\multirow{2}{2.5cm}{\footnotesize{Winter 2025/2026}} & Topics in the Cognitive Science of Morality\\
+& \footnotesize{course at master's level; University of Oldenburg; jointly with Pascale Willemsen; also lecture series}\\
+\\
 \multirow{2}{2.5cm}{\footnotesize{Winter 2025/2026}} & Forschungsorientierte Einführung in die Experimentelle Philosophie,\\&Seminar 2\\
 & \footnotesize{course at master's level; University of Oldenburg; jointly with Stephan Kornmesser}\\
 \\
@@ -616,9 +655,9 @@
 \end{longtable}
 
 
-%%%%%%%%%%%%%
-% TUTORIALS %
-%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+% TEACHING - TUTORIALS %
+%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Tutorial Courses}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{Summer 2014\\Summer 2015}} & Einführung in die Praktische Philosophie\\
@@ -630,9 +669,9 @@
 \end{longtable}
 
 
-%%%%%%%%%%%%%%%%%%%
-% EXTRACURRICULAR %
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TEACHING - EXTRACURRICULAR %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Extracurricular Courses and Mentoring Roles}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{Winter 2022/2023\\Summer 2023\\Winter 2023/2024\\Summer 2024\\Winter 2024/2025\\Summer 2025\\Winter 2025/2026}} & Nach dem Studium promovieren?!\\
@@ -652,18 +691,18 @@
 \end{longtable}
 
 
-%%%%%%%%%%%%
-% CONCEPTS %
-%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+% TEACHING - CONCEPTS %
+%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Teaching Concepts}
 \begin{literature}
 \lititem Bauer, Alexander Max; Kornmesser, Stephan (2025): \textit{Forschungsorientierte Einführung in die Experimentelle Philosophie.} Oldenburg: University of Oldenburg.
 \end{literature}
 
 
-%%%%%%%%%%%%%
-% MATERIALS %
-%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+% TEACHING - MATERIALS %
+%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Teaching Materials}
 \begin{literature}
 \lititem Bauer, Alexander Max (2025): \textit{Aristoteles' \enquote{Metaphysik.} Tafelbild zu Buch $\alpha$}. Oldenburg: University of Oldenburg.
@@ -676,14 +715,32 @@
 \end{literature}
 
 
-%%%%%%%%%%
-% THESES %
-%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+% TEACHING - THESES %
+%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Theses}
 \begin{literature}
-\lititem Saylam, Esma (2025): \textit{Die Auseinandersetzung mit dem Tod durch philosophisches Denken. Eine Herangehensweise anhand des Bilderbuchs \enquote{Von Larven und Libellen} von Gesa Rensmann} (bachelor's thesis; University of Oldenburg; supervisor: Paul Blattner)
+\lititem Schmidke, Laura (in progress): \textit{Sprache, Denken und Ideologie. Eine Rekonstruktion von Victor Klemperers Sprachdenken und ihre Bedeutung für den Philosophieunterricht} (master's thesis; University of Oldenburg; supervisor: Susanne Möbuß)
 
-\lititem Jahnel, Niklas (2025): \textit{Nihilismus, Moral und Glaube. Ein interdisziplinärer Ansatz} (master's thesis; University of Oldenburg; supervisor: Susanne Möbuß)
+\lititem Schwartau, Luisa (in progress): \textit{Wie wird das gute Leben in Aristoteles' \enquote{Nikomachischer Ethik} und Michael Endes \enquote{Momo} charakterisiert?} (bachelor's thesis; University of Oldenburg; second examiner: Thomas Boyken)
+
+\lititem Wienekamp, Saskia (in progress): \textit{Die Ethik der Künstlichen Intelligenz. Moralische Entscheidungsfindung und Verantwortung in autonomen Systemen} (master's thesis; University of Oldenburg; second examiner: Susanne Möbuß)
+
+\lititem Reinken, Svea (2026): \textit{Lügen, Irreführungen und die Frage um die Täuschungsabsicht. Eine Untersuchung mit Mitteln der Experimentellen Philosophie} (master's thesis; University of Oldenburg; supervisor: Mark Siebel)
+
+\lititem Maler, Henrik (2026): \textit{Ästhetik und Existenz. Karl Jaspers' Ästhetik-Begriff im Lichte von Walter Paters Ästhetizismus} (master's thesis; University of Oldenburg; supervisor: Susanne Möbuß)
+
+\lititem Schaaf, Tristan (2026): \textit{Inwiefern lässt sich der Tod als Gegenstand gerechter Verteilung begreifen und wie gehen unterschiedliche Gerechtigkeitstheorien mit Ungleichheiten von Todesrisiken um?} (bachelor's thesis; University of Oldenburg; supervisor: Mark Siebel)
+
+\lititem Joshua Krüger (2026): \textit{Roll for Mortality. \textit{Dungeons \& Dragons} as a Framework for Processing Death. Exploring How Gameplay Encourages Existential Processing} (bachelor's thesis; University of Oldenburg; second examiner: Mark Siebel)
+
+\lititem Heinks, Ellen (2026): \textit{Aristoteles' Konzept der Tugendfreundschaft. Eine Analyse anhand des Films \textit{Ziemlich beste Freunde}} (bachelor's thesis; University of Oldenburg; second examiner: Susanne Möbuß)
+
+\lititem Lian, Jessica Xinyi (2026): \textit{Does Immortality Bring Us Meaning in Life? Criteria for a Fulfilling Everlasting Life With \textit{Frieren: Beyond a Journey's End} as an Example} (bachelor's thesis; University of Oldenburg; supervisor: Paul Blattner)
+
+\lititem Jahnel, Niklas (2026): \textit{Nihilismus, Moral und Glaube. Ein interdisziplinärer Ansatz} (master's thesis; University of Oldenburg; supervisor: Susanne Möbuß)
+
+\lititem Saylam, Esma (2026): \textit{Die Auseinandersetzung mit dem Tod durch philosophisches Denken. Eine Herangehensweise anhand des Bilderbuchs \enquote{Von Larven und Libellen} von Gesa Rensmann} (bachelor's thesis; University of Oldenburg; supervisor: Paul Blattner)
 
 \lititem Götting, Larissa (2025): \textit{Zwischen dem Ideal einer \enquote{Erziehung nach Auschwitz} im Sinne Theodor W. Adornos und der \enquote{Kulturindustrie.} Darstellung der Veränderung des Erinnerns am Beispiel der Instagram-Kanäle @ichbinsophiescholl und @eva.stories} (master's thesis; University of Oldenburg; supervisor: Susanne Möbuß)
 
@@ -765,29 +822,33 @@
 \section{Peer Review}
 
 
-%%%%%%%%%%%%
-% JOURNALS %
-%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PEER REVIEW - JOURNALS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Journals}
 \begin{itemize}
-   \item Axiomathes (2020, 2021)
-   \item \enquote{forsch!} -- Studentisches Online-Journal der Universität Oldenburg (2018, 2023)
-   \item Zeitschrift für Praktische Philosophie (2021)
+   \item \textit{Axiomathes} (2020, 2021)
+   \item \textit{Ergo} (2026)
+   \item \textit{\enquote{forsch!} -- Studentisches Online-Journal der Universität Oldenburg} (2018, 2023)
+   \item \textit{Philosophical Psychology} (2026)
+   \item \textit{PLOS ONE} (2026)
+   \item \textit{Systems Research and Behavioral Science} (2025)
+   \item \textit{Zeitschrift für Praktische Philosophie} (2021)
 \end{itemize}
 
 
-%%%%%%%%%%%%%%%
-% CONFERENCES %
-%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PEER REVIEW - CONFERENCES %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Conferences}
 \begin{itemize}
    \item 3rd European Experimental Philosophy Conference (2023)
 \end{itemize}
 
 
-%%%%%%%%%%
-% AWARDS %
-%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+% PEER REVIEW - AWARDS %
+%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Awards}
 \begin{itemize}
    \item Elizabeth-Magie-Preis (2025)
@@ -800,8 +861,11 @@
 \clearpage
 \section{Honors}
 \begin{longtable}{p{2.5cm}p{11cm}}
+\multirow{2}{2.5cm}{\footnotesize{2026}} & Seal of Excellence\\
+& \footnotesize{European Commission, Horizon Europe, MSCA Postdoctoral Fellowships; for the proposal \enquote{Distributive Justice -- Reference Points and Evaluations}}\\
+\\
 \multirow{2}{2.5cm}{\footnotesize{2024}} & Award for Excellence in Teaching in the category Research-Based Learning (\enquote{Preis der Lehre,} category \enquote{Forschendes Lernen})\\
-& \footnotesize{University of Oldenburg; jointly with Stephan Kornmesser}\\
+& \footnotesize{University of Oldenburg; for the course \enquote{Forschungsorientierte Einführung in die Experimentelle Philosophie}; jointly with Stephan Kornmesser}\\
 \\
 \multirow{2}{2.5cm}{\footnotesize{2015/2016}} & Germany Scholarship (\enquote{Deutschlandstipendium})\\
 & \footnotesize{University of Oldenburg}\\
@@ -834,6 +898,15 @@
 %%%%%%%%%%%%%%
 \clearpage
 \section{References}
+\textsc{Prof\hspace{0.5pt}. Dr\hspace{0.5pt}. Nils Baratella}
+
+Hochschule Düsseldorf, University of Applied Sciences\\
+Faculty of Social Sciences and Cultural Studies\\
+Professor of Social Philosophy and Social Ethics with a focus on political philosophy\\
+and theories of justice
+
+email: \href{mailto:nils.baratella@hs-duesseldorf.de}{nils.baratella@hs-duesseldorf.de}\vspace{12pt}
+
 \textsc{Prof\hspace{0.5pt}. Dr\hspace{0.5pt}. Mark Siebel}
 
 Carl von Ossietzky University of Oldenburg\\
@@ -850,16 +923,7 @@ Faculty of Economics and Social Sciences (WiSo)\\
 Department of Economics\\
 Professor of Economics, especially Behavioral Economics
 
-email: \href{mailto:stefan.traub@hsu-hh.de}{stefan.traub@hsu-hh.de}\vspace{12pt}
-
-\textsc{Prof\hspace{0.5pt}. Dr\hspace{0.5pt}. Nils Baratella}
-
-Hochschule Düsseldorf, University of Applied Sciences\\
-Faculty of Social Sciences and Cultural Studies\\
-Professor of Social Philosophy and Social Ethics with a focus on political philosophy\\
-and theories of justice
-
-email: \href{mailto:nils.baratella@hs-duesseldorf.de}{nils.baratella@hs-duesseldorf.de}
+email: \href{mailto:stefan.traub@hsu-hh.de}{stefan.traub@hsu-hh.de}
 
 
 \end{document}
