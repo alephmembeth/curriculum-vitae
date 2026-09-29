@@ -35,7 +35,9 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[SmallCapsFont=fontin_small_caps.otf,BoldFont=fontin_bold.otf,ItalicFont=fontin_italic.otf]{fontin.otf}
 
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\definecolor{cvheading}{HTML}{8B629C}
+\titleformat{\section}{\Large\scshape\raggedright\color{cvheading}}{}{0em}{}[{\color{black}\titlerule}]
+\titleformat*{\subsection}{\large\bfseries\color{cvheading}}
 \titlespacing{\section}{0pt}{15pt}{15pt}
 
 \setlength{\fboxsep}{0pt}
@@ -52,7 +54,7 @@
    }\bigskip\par}
 
 \par{\centering
-   {\Huge\textsc{Alexander Max Bauer}
+   {\Huge\color{cvheading}\textsc{Alexander Max Bauer}
    }\bigskip\par}
 
 \vspace{1cm}
@@ -78,18 +80,18 @@
 \clearpage
 \section{Kontakt}
 \begin{longtable}{p{4cm}p{11.5cm}}
-   \textsc{Anschrift}   & Carl von Ossietzky Universität Oldenburg\\
-                        & Fakultät IV -- Human- und Gesellschaftswissenschaften\\
-                        & Institut für Philosophie\\
-                        & Ammerländer Heerstraße 114\,--\,119\\
-                        & 26129 Oldenburg\\
-                        & Deutschland\\
-                        & \\
-   \textsc{Telefon}     & +49 (0)441 798 2034\\
-                        & \\
-   \textsc{E-Mail}      & \href{mailto:alexander.max.bauer@uol.de}{alexander.max.bauer@uol.de}\\
-                        & \\
-   \textsc{Website}     & \href{http://www.alexandermaxbauer.de/}{www.alexandermaxbauer.de}
+   \textsc{Anschrift}   & Carl von Ossietzky Universität Oldenburg                               \\
+                        & Fakultät IV -- Human- und Gesellschaftswissenschaften                  \\
+                        & Institut für Philosophie                                               \\
+                        & Ammerländer Heerstraße 114\,--\,119                                    \\
+                        & 26129 Oldenburg                                                        \\
+                        & Deutschland                                                            \\
+                        &                                                                        \\
+   \textsc{Telefon}     & +49 (0)441 798 2034                                                    \\
+                        &                                                                        \\
+   \textsc{E-Mail}      & \href{mailto:alexander.max.bauer@uol.de}{alexander.max.bauer@uol.de}   \\
+                        &                                                                        \\
+   \textsc{Website}     & \href{http://www.alexandermaxbauer.de/}{www.alexandermaxbauer.de}      \\
 \end{longtable}
 
 
@@ -158,7 +160,7 @@
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{3}{2.5cm}{\footnotesize{04/2017\,--\,02/2024}} & Doctor philosophiae (Philosophie)\\
 & \textsc{Carl von Ossietzky Universität Oldenburg}\\
-& \footnotesize{mit summa cum laude bestanden; Titel der kumulativen Dissertation: \enquote{Empirische Studien zu Fragen der Bedarfsgerechtigkeit} (Referent: Mark Siebel, Korreferent: Markus Tepe); Tag der Disputation: 14/02/2024 (weitere Kommissionsmitglieder: Dirk Büsch, Susanne Möbuß und Mark Schweda)}\\
+& \footnotesize{mit \textit{summa cum laude} bestanden; Titel der kumulativen Dissertation: \enquote{Empirische Studien zu Fragen der Bedarfsgerechtigkeit} (Referent: Mark Siebel, Korreferent: Markus Tepe); Tag der Disputation: 14/02/2024 (weitere Kommissionsmitglieder: Dirk Büsch, Susanne Möbuß und Mark Schweda)}\\
 \\
 \multirow{3}{2.5cm}{\footnotesize{04/2014\,--\,03/2017}} & Master of Arts (Philosophie)\\
 & \textsc{Carl von Ossietzky Universität Oldenburg}\\
@@ -185,9 +187,9 @@
 \section{Publikationen}
 
 
-%%%%%%%%%%%%%%%%%%%
-% IN BEGUTACHTUNG %
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - IN BEGUTACHTUNG %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Publikationen in Begutachtung}
 \begin{literature}
 \lititem Gahtan, Jamie; Bauer, Alexander Max; Bäker, Neele; Eilts, Jule; Wilke, Jessica (in Überarbeitung für \textit{Current Psychology}): \enquote{Moral Self and Socioeconomic Profiles in Middle Childhood. Examining the Links to Self-Esteem, Prosocial Behavior, and Aggressive Behavior in a Cluster-Analytic Study}.
@@ -205,9 +207,9 @@
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%%%
-% IN VORBEREITUNG %
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - IN VORBEREITUNG %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Publikationen in Vorbereitung}
 \begin{literature}
 \lititem Bauer, Alexander Max; Bosen, Jennifer; Klausner, Lukas Daniel (in Vorbereitung). \enquote{Words Without Speakers. On the Perception of Large Language Models as Anthromorph(ised) Interlocutors}.
@@ -229,9 +231,9 @@
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%
-% MONOGRAPHIEN %
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - MONOGRAPHIEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Monographien}
 \begin{literature}
 \lititem Bauer, Alexander Max (2025): \textit{Empirical Studies on Questions of Need-Based Distributive Justice}. Paderborn: mentis.
@@ -242,18 +244,18 @@
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%%%
-% IN MONOGRAPHIEN %
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - IN MONOGRAPHIEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Beiträge in Monographien mit mehreren Autoren}
 \begin{literature}
 \lititem Bauer, Alexander Max; Kornmesser Stephan; Meyer, Henrike (2024): \enquote{Constative and Performative Utterances, $\chi^2$ Tests, and LimeSurvey}. In: Kornmesser, Stephan; Bauer, Alexander Max; Alfano, Mark; Allard, Aurélien; Baumgartner, Lucien; Cova, Florian; Engelhardt, Paul; Fischer, Eugen; Meyer, Henrike; Reuter, Kevin; Sytsma, Justin; Thompson, Kyle; Wyszynski, Marc: \textit{Experimental Philosophy for Beginners. A Gentle Introduction to Methods and Tools}. Cham: Springer.
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%
-% ZEITSCHRIFTEN %
-%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - ZEITSCHRIFTEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Zeitschriften und Schwerpunktausgaben}
 \begin{literature}
 \lititem Bauer, Alexander Max; Ellmers, Sven; Nosthoff, Anna-Verena; Yildirim, Aylin (Hrsg.) (2026): \textit{Oldenburger Philosophische Studien}.
@@ -262,9 +264,9 @@
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%%%%
-% IN ZEITSCHRIFTEN %
-%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - IN ZEITSCHRIFTEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Beiträge in Zeitschriften}
 \begin{literature}
 \lititem Wilke, Jessica; Bauer, Alexander Max; Bandaru, Yohita Shraddha; Gahtan, Jamie; Bäker, Neele (2026): \enquote{Who Deserves What -- and Why? A Systematic Review and Meta-Analysis on Distributive Justice Preferences and Low Socioeconomic Backgrounds in Children and Adolescents}. \textit{Current Research in Ecological and Social Psychology} 10, 100277. (begutachtet)
@@ -300,9 +302,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{literature}
 
 
-%%%%%%%%%%%%%%%
-% HERAUSGABEN %
-%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - HERAUSGABEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Herausgaben}
 \begin{literature}
 \lititem Bauer, Alexander Max; Grass, Helena Esther (Hrsg.) (2024): \textit{Oldenburger Jahrbuch für Philosophie 2021/2022}. Oldenburg: University of Oldenburg Press.
@@ -321,9 +323,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%%
-% IN HERAUSGABEN %
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - IN HERAUSGABEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Beiträge in Herausgaben}
 \begin{literature}
 \lititem Bauer, Alexander Max; Romann, Jan (2024): \enquote{Equal Deeds, Different Needs. Need, Accountability, and Resource Availability in Third-Party Distribution Decisions}. In: Knobe, Joshua; Nichols, Shaun (Hrsg.): \textit{Oxford Studies in Experimental Philosophy}. Bd. 5. Oxford: Oxford University Press. S. 7--31. (begutachtet)
@@ -344,9 +346,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%
-% EINLEITUNGEN %
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - EINLEITUNGEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Einleitungen, Vorworte und Nachworte}
 \begin{literature}
 \lititem Kornmesser, Stephan; Bauer, Alexander Max; Alfano, Mark; Allard, Aurélien; Baumgartner, Lucien; Cova, Florian; Engelhardt, Paul; Fischer, Eugen; Meyer, Henrike; Reuter, Kevin; Sytsma, Justin; Thompson, Kyle; Wyszynski, Marc (2024): \enquote{Introduction. Setting Out for New Shores}. In: dies.: \textit{Experimental Philosophy for Beginners. A Gentle Introduction to Methods and Tools}. Cham: Springer. 1--18.
@@ -377,9 +379,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%%
-% ARBEITSPAPIERE %
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - ARBEITSPAPIERE %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Arbeitspapiere}
 \begin{literature}
 \lititem Henne, Paul; Pedryc, Wiktoria; Deichen, Benjamin; Bauer, Alexander Max; Sankner, Annika; Varghese, Saniya; Moonlight, Isaiah (2025): \enquote{The Kraemer Effect Reconsidered.} \textit{OSF Preprints}.
@@ -402,27 +404,27 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%
-% ÜBERSETZUNGEN %
-%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - ÜBERSETZUNGEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Übersetzungen}
 \begin{literature}
 \lititem Priest, Graham (2023): \enquote{Paradoxie und Parakonsistenz}. Übers. von Bauer, Alexander Max; Damschen, Gregor; Siebel, Mark. In: dies. (Hrsg.): \textit{Paradoxien. Grenzdenken und Denkgrenzen von A(llwissen) bis Z(eit)}. Paderborn: mentis. S. 225--248.
 \end{literature}
 
 
-%%%%%%%%%%%%%
-% REDAKTION %
-%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - REDAKTION %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Redaktion}
 \begin{literature}
 \lititem Beaucamp, Eduard (2017): \textit{Im Spiegel der Geschichte. Die Leipziger Schule der Malerei}. Hrsg. von Bormuth, Matthias; Hüttel, Richard; Triegel, Michael. Red. von Unverzagt, Malte Maria; Bauer, Alexander Max; Bormuth, Matthias. Göttingen: Wallstein.
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%
-% DISSERTATION %
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLIKATIONEN - DISSERTATION %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Dissertation}
 \begin{literature}
 \lititem Bauer, Alexander Max (2024): \textit{Empirische Studien zu Fragen der Bedarfsgerechtigkeit}. Dissertation. Carl von Ossietzky Universität Oldenburg.
@@ -436,9 +438,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \section{Präsentationen}
 
 
-%%%%%%%%%%%%%%
-% EINGELADEN %
-%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRÄSENTATIONEN - EINGELADEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Auf Einladung}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{20/07/2024}} & Poisoned Babies, Shot Fathers, and Ruined Experiments -- Experimental Evidence in Favor of the Compositionality Constraint of Actual Causation\\
@@ -452,9 +454,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{longtable}
 
 
-%%%%%%%%%%%%%%%
-% BEGUTACHTET %
-%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRÄSENTATIONEN - BEGUTACHTET %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Begutachtet}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{12/07/2025}} & Empirical Studies on Questions of Need-Based Distributive Justice\\
@@ -508,10 +510,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{longtable}
 
 
-%%%%%%%%%%
-% ANDERE %
-%%%%%%%%%%
-\clearpage % tmp %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRÄSENTATIONEN - ANDERE %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Andere}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{29/11/2025}} & Jubiläumssammelband \enquote{Geisteswissenschaften und Digitale Spiele -- Debatten, Data \& Desiderata}\\
@@ -567,11 +568,11 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \multirow{3}{2.5cm}{\footnotesize{in Vorbereitung}} & Greifswald Oldenburg Lectures\\
 & \footnotesize{Ringvorlesung an der Universität Greifswald und der Carl von Ossietzky Universität Oldenburg; zusammen mit Gregor Damschen und Mark Siebel}\\
 \\
-\multirow{3}{2.5cm}{\footnotesize{Winter 2026/2027}} & Topics in the Cognitive Science of Morality\\
+\multirow{3}{2.5cm}{\footnotesize{WiSe 2026/2027}} & Topics in the Cognitive Science of Morality\\
 & \footnotesize{Ringvorlesung an der Universität Zürich und der Carl von Ossietzky Universität Oldenburg; zusammen mit Pascale Willemsen; zugleich Seminar an der Carl von Ossietzky Universität Oldenburg}\\
 & \footnotesize{mit Beiträgen von Sebastian Bernhard, Joanna Demaree-Cotton, Vilius Dranseika, Nicole Gotzner, Dongwoo Kim, Miklós Kürthy, Hyungrae Noh, Kevin Reuter und Pascale Willemsen}\\
 \\
-\multirow{3}{2.5cm}{\footnotesize{Summer 2026}} & Wege in den Beruf -- Außerschulische Perspektiven für Geistes-, Sprach- und Kulturwissenschaftler*innen\\
+\multirow{3}{2.5cm}{\footnotesize{SoSe 2026}} & Wege in den Beruf -- Außerschulische Perspektiven für Geistes-, Sprach- und Kulturwissenschaftler*innen\\
 & \footnotesize{Ringvorlesung an der Carl von Ossietzky Universität Oldenburg; zusammen mit Friederike Nastold}\\
 & \footnotesize{mit Beiträgen von Lennert Brinkhoff, Monika Eden, Solveig Elias, Nicole Griese, Holger Leerhoff, Hilke Lüschen, Jonas Schoster und Thomas Wachtendorf }\\
 \\
@@ -616,9 +617,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \section{Lehre}
 
 
-%%%%%%%%%%%%
-% SEMINARE %
-%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+% LEHRE - SEMINARE %
+%%%%%%%%%%%%%%%%%%%%
 \subsection*{Seminare}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{WiSe 2026/2027}} & Topics in the Cognitive Science of Morality\\
@@ -672,9 +673,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{longtable}
 
 
-%%%%%%%%%%%%
-% TUTORIEN %
-%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+% LEHRE - TUTORIEN %
+%%%%%%%%%%%%%%%%%%%%
 \subsection*{Tutorien}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{SoSe 2014\\SoSe 2015}} & Einführung in die Praktische Philosophie\\
@@ -686,9 +687,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{longtable}
 
 
-%%%%%%%%%%%%%%%%%%%%%%
-% AUSSERCURRICULARES %
-%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LEHRE - AUSSERCURRICULARES %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Außercurriculares}
 \begin{longtable}{p{2.5cm}p{11cm}}
 \multirow{2}{2.5cm}{\footnotesize{WiSe 2022/2023\\SoSe 2023\\WiSe 2023/2024\\SoSe 2024\\WiSe 2024/2025\\SoSe 2025\\WiSe 2025/2026\\WiSe 2026/2027}} & Nach dem Studium promovieren?!\\
@@ -709,18 +710,18 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{longtable}
 
 
-%%%%%%%%%%%%%%%%
-% LEHRKONZEPTE %
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+% LEHRE - LEHRKONZEPTE %
+%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Lehrkonzepte}
 \begin{literature}
 \lititem Bauer, Alexander Max; Kornmesser, Stephan (2025): \textit{Forschungsorientierte Einführung in die Experimentelle Philosophie}. Oldenburg: Carl von Ossietzky Universität Oldenburg.
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%%%
-% LEHRMATERIALIEN %
-%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LEHRE - LEHRMATERIALIEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Lehrmaterialien}
 \begin{literature}
 \lititem Bauer, Alexander Max (2025): \textit{Aristoteles' \enquote{Metaphysik}. Tafelbild zu Buch $\alpha$}. Oldenburg: Carl von Ossietzky Universität Oldenburg.
@@ -733,9 +734,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{literature}
 
 
-%%%%%%%%%%%%%%%%%%%%%
-% ABSCHLUSSARBEITEN %
-%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LEHRE - ABSCHLUSSARBEITEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Abschlussarbeiten}
 \begin{literature}
 \lititem Schmidke, Laura (in Arbeit): \textit{Sprache, Denken und Ideologie. Eine Rekonstruktion von Victor Klemperers Sprachdenken und ihre Bedeutung für den Philosophieunterricht} (Masterarbeit an der Carl von Ossietzky Universität Oldenburg; Erstprüferin: Susanne Möbuß)
@@ -844,9 +845,9 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \section{Gutachten}
 
 
-%%%%%%%%%%%%%%%%%
-% ZEITSCHRIFTEN %
-%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GUTACHTEN - ZEITSCHRIFTEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Zeitschriften}
 \begin{itemize}
    \item \textit{Axiomathes} (2020, 2021)
@@ -859,18 +860,18 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 \end{itemize}
 
 
-%%%%%%%%%%%%%%%
-% KONFERENZEN %
-%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GUTACHTEN - KONFERENZEN %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Konferenzen}
 \begin{itemize}
    \item 3rd European Experimental Philosophy Conference (2023)
 \end{itemize}
 
 
-%%%%%%%%%%
-% PREISE %
-%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+% GUTACHTEN - PREISE %
+%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Preise}
 \begin{itemize}
    \item Elizabeth-Magie-Preis (2025)
@@ -920,6 +921,15 @@ sein? Über Gier, Neid und Gerechtigkeit}. \textit{Zeitschrift für philosophisc
 %%%%%%%%%%%%%%
 \clearpage
 \section{Referenzen}
+\textsc{Prof\hspace{0.5pt}. Dr\hspace{0.5pt}. Nils Baratella}
+
+Hochschule Düsseldorf\\
+Fachbereich Sozial- \& Kulturwissenschaften\\
+Professur für Sozialphilosophie und Sozialethik mit den Schwerpunkten\\
+Politische Philosophie und Gerechtigkeitstheorien
+
+E-Mail: \href{mailto:nils.baratella@hs-duesseldorf.de}{nils.baratella@hs-duesseldorf.de}\\
+
 \textsc{Prof\hspace{0.5pt}. Dr\hspace{0.5pt}. Mark Siebel}
 
 Carl von Ossietzky Universität Oldenburg\\
@@ -937,15 +947,6 @@ Fächergruppe Volkswirtschaftslehre\\
 Professur für Volkswirtschaftslehre, insbesondere Behavioral Economics
 
 E-Mail: \href{mailto:stefan.traub@hsu-hh.de}{stefan.traub@hsu-hh.de}\vspace{12pt}
-
-\textsc{Prof\hspace{0.5pt}. Dr\hspace{0.5pt}. Nils Baratella}
-
-Hochschule Düsseldorf\\
-Fachbereich Sozial- \& Kulturwissenschaften\\
-Professur für Sozialphilosophie und Sozialethik mit den Schwerpunkten\\
-Politische Philosophie und Gerechtigkeitstheorien
-
-E-Mail: \href{mailto:nils.baratella@hs-duesseldorf.de}{nils.baratella@hs-duesseldorf.de}\\
 
 
 \end{document}
